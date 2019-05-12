@@ -1,43 +1,25 @@
 import React from 'react'
-import {
-  Card,
-  Col,
-  Row,
-  Typography
-} from 'antd'
+import { Col, Row } from 'antd'
+import PortSummary from './PortSummary'
+import TradeTransactions from './TradeTransactions'
+import RecentTransactions from './RecentTransactions'
 
-const { Text, Title } = Typography
-
-const Dashboard = () => {
+function Dashboard() {
   return (
     <div>
-      <Row gutter={16}>
+      <Row gutter={16} style={{ marginBottom: 20 }}>
         <Col span={16}>
-          <Card>
-            <Row>
-              <Col span={11}>
-                <Text>
-                  Welcome to
-                  <Title level={3}>Portfolio</Title>
-                </Text>
-
-                <Text>
-                  Available Cash
-                  <Title level={4}>PHP 100,000.00</Title>
-                </Text>
-
-                <Text>
-                  Total Equity
-                  <Title level={4}>PHP 100,000.00</Title>
-                </Text>
-              </Col>
-              <Col span={13}>
-                col-12
-              </Col>
-            </Row>
-          </Card>
+          <PortSummary/>
         </Col>
-        <Col span={8}>col-8</Col>
+        <Col span={8}>
+          <TradeTransactions/>
+        </Col>
+      </Row>
+
+      <Row>
+        <Col span={24}>
+          <RecentTransactions/>
+        </Col>
       </Row>
     </div>
   )
