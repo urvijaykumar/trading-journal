@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { Layout } from 'antd'
 import Sidebar from './components/Sidebar'
-import Dashboard from './views/Meh'
+import Dashboard from './views/Dashboard'
 import TradeLogs from './views/TradeLogs'
 
 import 'antd/dist/antd.css'
