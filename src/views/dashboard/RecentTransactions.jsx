@@ -1,12 +1,13 @@
 import React from 'react'
 import { Card, Tabs } from 'antd'
 import Trades from '../../components/Trades'
+import BankTransactions from '../../components/BankTransactions'
 
 const { TabPane } = Tabs
 
 const transactionTabs = [
   { name: 'Portfolio', value: 'portfolio', content: Trades },
-  { name: 'Bank Transactions', value: 'bank-transactions', content: 'meh' },
+  { name: 'Bank Transactions', value: 'bank-transactions', content: BankTransactions },
 ]
 
 function RecentTransactions() {

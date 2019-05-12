@@ -2,7 +2,7 @@ import React from 'react'
 import { Button, Card, Divider, Typography } from 'antd'
 import styled from 'styled-components'
 
-const { Text, Title } = Typography
+const { Text } = Typography
 
 const Container = styled(Card)`
   height: 100%;
